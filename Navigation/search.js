@@ -17,7 +17,7 @@ const Search = () => {
         const fetchdata = await axios("https://api.themoviedb.org/3/search/movie",
             {
                 params: {
-                    api_key: "ed91833294a575a7469cf7c8e13501ad",
+                    api_key: "",
                     query: searchdata
                 }
             });

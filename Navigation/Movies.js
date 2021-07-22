@@ -26,7 +26,7 @@ const MovieList = ({ navigation }) => {
         const fetchlists = await axios("https://api.themoviedb.org/3/movie/550/lists",
             {
                 params: {
-                    api_key: "ed91833294a575a7469cf7c8e13501ad",
+                    api_key: "",
                     movie_id: "550"
                 }
             });
@@ -72,7 +72,7 @@ const Details = ({ route, navigation }) => {
         const response = await axios("https://api.themoviedb.org/3/movie/{movie_id}",
             {
                 params: {
-                    api_key: "ed91833294a575a7469cf7c8e13501ad",
+                    api_key: "",
                     movie_id: sendToDetails
                 }
             });
